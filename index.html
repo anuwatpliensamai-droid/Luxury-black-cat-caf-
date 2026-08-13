@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Nocturne Black Cat Café</title>
 
+<!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link
+href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
 
 <style>
 
-/* =========================
+/* ========================================
    RESET
-========================= */
+======================================== */
 
 *{
     margin:0;
@@ -35,15 +40,17 @@ body{
 }
 
 
-/* =========================
+/* ========================================
    NAVBAR
-========================= */
+======================================== */
 
 .navbar{
     position:fixed;
     top:0;
     left:0;
+
     width:100%;
+
     z-index:1000;
 
     display:flex;
@@ -53,6 +60,7 @@ body{
     padding:20px 8%;
 
     background:rgba(0,0,0,.65);
+
     backdrop-filter:blur(12px);
 
     border-bottom:1px solid rgba(212,175,55,.2);
@@ -60,20 +68,27 @@ body{
 
 .nav-logo{
     font-family:'Cinzel',serif;
+
     font-size:1.4rem;
+
     letter-spacing:4px;
+
     color:#d4af37;
 }
 
 .nav-links{
     display:flex;
+
     gap:30px;
 }
 
 .nav-links a{
     color:#ddd;
+
     text-decoration:none;
+
     font-size:.9rem;
+
     transition:.3s;
 }
 
@@ -82,26 +97,31 @@ body{
 }
 
 
-/* =========================
+/* ========================================
    HERO
-========================= */
+======================================== */
 
 .hero{
 
     min-height:100vh;
 
     background:
+
     linear-gradient(
-        rgba(0,0,0,.45),
+        rgba(0,0,0,.40),
         rgba(0,0,0,.88)
     ),
-    url('1811.jpg');
+
+    url('hero-cat.jpg');
 
     background-size:cover;
+
     background-position:center;
 
     display:flex;
+
     justify-content:center;
+
     align-items:center;
 
     text-align:center;
@@ -110,30 +130,40 @@ body{
 }
 
 .hero::after{
+
     content:"";
+
     position:absolute;
+
     bottom:0;
     left:0;
-    width:100%;
-    height:150px;
 
-    background:linear-gradient(
+    width:100%;
+
+    height:180px;
+
+    background:
+    linear-gradient(
         transparent,
         #080808
     );
 }
 
 .hero-content{
+
     position:relative;
+
     z-index:2;
 
     max-width:900px;
+
     padding:30px;
 
     animation:fadeUp 1.3s ease;
 }
 
 .logo{
+
     font-family:'Cinzel',serif;
 
     font-size:clamp(3.5rem,10vw,8rem);
@@ -143,8 +173,10 @@ body{
     letter-spacing:10px;
 
     text-shadow:
-    0 0 20px rgba(212,175,55,.3),
-    0 0 50px rgba(0,0,0,.8);
+
+    0 0 20px rgba(212,175,55,.35),
+
+    0 0 50px rgba(0,0,0,.9);
 }
 
 .hero-subtitle{
@@ -170,6 +202,11 @@ body{
 
     font-size:1rem;
 }
+
+
+/* ========================================
+   BUTTON
+======================================== */
 
 .btn{
 
@@ -205,11 +242,12 @@ body{
 }
 
 
-/* =========================
+/* ========================================
    GENERAL SECTION
-========================= */
+======================================== */
 
 section{
+
     padding:110px 8%;
 }
 
@@ -235,6 +273,7 @@ section{
     display:block;
 
     width:60px;
+
     height:2px;
 
     background:#d4af37;
@@ -243,9 +282,9 @@ section{
 }
 
 
-/* =========================
+/* ========================================
    ABOUT
-========================= */
+======================================== */
 
 .about{
 
@@ -271,24 +310,8 @@ section{
     border-radius:22px;
 
     border:1px solid #292929;
-}
 
-.about-image::after{
-
-    content:"";
-
-    position:absolute;
-
-    inset:0;
-
-    background:
-    linear-gradient(
-        135deg,
-        rgba(212,175,55,.12),
-        transparent
-    );
-
-    pointer-events:none;
+    background:#111;
 }
 
 .about-image img{
@@ -305,6 +328,7 @@ section{
 }
 
 .about-image:hover img{
+
     transform:scale(1.05);
 }
 
@@ -318,17 +342,19 @@ section{
 }
 
 .about-text strong{
+
     color:#d4af37;
 }
 
 
-/* =========================
+/* ========================================
    MENU
-========================= */
+======================================== */
 
 #menu{
 
     background:
+
     linear-gradient(
         #111,
         #080808
@@ -352,6 +378,7 @@ section{
 .card{
 
     background:
+
     linear-gradient(
         145deg,
         #171717,
@@ -383,6 +410,7 @@ section{
     left:0;
 
     width:100%;
+
     height:2px;
 
     background:#d4af37;
@@ -403,6 +431,7 @@ section{
 }
 
 .card:hover::before{
+
     transform:scaleX(1);
 }
 
@@ -432,9 +461,9 @@ section{
 }
 
 
-/* =========================
+/* ========================================
    EXPERIENCE
-========================= */
+======================================== */
 
 .experience{
 
@@ -514,9 +543,9 @@ section{
 }
 
 
-/* =========================
+/* ========================================
    GALLERY
-========================= */
+======================================== */
 
 #gallery{
 
@@ -532,7 +561,7 @@ section{
     display:grid;
 
     grid-template-columns:
-    repeat(3,1fr);
+    repeat(2,1fr);
 
     gap:25px;
 }
@@ -550,16 +579,11 @@ section{
     background:#111;
 }
 
-.gallery-item.large{
-
-    grid-column:span 2;
-}
-
 .gallery-item img{
 
     width:100%;
 
-    height:360px;
+    height:400px;
 
     object-fit:cover;
 
@@ -570,7 +594,7 @@ section{
 
 .gallery-item:hover img{
 
-    transform:scale(1.08);
+    transform:scale(1.07);
 }
 
 .gallery-caption{
@@ -582,9 +606,10 @@ section{
 
     width:100%;
 
-    padding:25px 20px 18px;
+    padding:35px 20px 18px;
 
     background:
+
     linear-gradient(
         transparent,
         rgba(0,0,0,.9)
@@ -603,9 +628,9 @@ section{
 }
 
 
-/* =========================
+/* ========================================
    CTA
-========================= */
+======================================== */
 
 .cta{
 
@@ -616,11 +641,11 @@ section{
     background:
 
     linear-gradient(
-        rgba(0,0,0,.75),
+        rgba(0,0,0,.72),
         rgba(0,0,0,.95)
     ),
 
-    url('1810.jpg');
+    url('gallery-cat-1.jpg');
 
     background-size:cover;
 
@@ -648,9 +673,9 @@ section{
 }
 
 
-/* =========================
+/* ========================================
    FOOTER
-========================= */
+======================================== */
 
 footer{
 
@@ -698,13 +723,14 @@ footer p{
 }
 
 .social a:hover{
+
     color:#d4af37;
 }
 
 
-/* =========================
+/* ========================================
    ANIMATION
-========================= */
+======================================== */
 
 @keyframes fadeUp{
 
@@ -724,9 +750,9 @@ footer p{
 }
 
 
-/* =========================
-   MOBILE
-========================= */
+/* ========================================
+   TABLET
+======================================== */
 
 @media(max-width:900px){
 
@@ -736,20 +762,10 @@ footer p{
         repeat(2,1fr);
     }
 
-    .gallery{
-
-        grid-template-columns:
-        repeat(2,1fr);
-    }
-
-    .gallery-item.large{
-
-        grid-column:span 2;
-    }
-
     .about{
 
         grid-template-columns:1fr;
+
     }
 
     .about-image img{
@@ -761,8 +777,18 @@ footer p{
 
         grid-template-columns:1fr;
     }
+
+    .gallery{
+
+        grid-template-columns:1fr;
+    }
+
 }
 
+
+/* ========================================
+   MOBILE
+======================================== */
 
 @media(max-width:600px){
 
@@ -788,11 +814,6 @@ footer p{
         font-size:.7rem;
     }
 
-    .hero{
-
-        background-position:center;
-    }
-
     .logo{
 
         font-size:3.2rem;
@@ -810,6 +831,8 @@ footer p{
     .tagline{
 
         font-size:.85rem;
+
+        padding:0 10px;
     }
 
     section{
@@ -827,14 +850,9 @@ footer p{
         grid-template-columns:1fr;
     }
 
-    .gallery-item.large{
-
-        grid-column:span 1;
-    }
-
     .gallery-item img{
 
-        height:300px;
+        height:320px;
     }
 
     .about-image img{
@@ -842,17 +860,17 @@ footer p{
         height:350px;
     }
 
-    .experience-box{
-
-        grid-template-columns:1fr;
-    }
-
     .cta{
 
         padding:90px 20px;
     }
+
 }
 
+
+/* ========================================
+   SMALL MOBILE
+======================================== */
 
 @media(max-width:400px){
 
@@ -870,18 +888,30 @@ footer p{
 
         font-size:.7rem;
     }
+
+}
+
+
+/* ========================================
+   IMAGE FALLBACK
+======================================== */
+
+img{
+
+    background:#111;
 }
 
 </style>
+
 </head>
 
 
 <body>
 
 
-<!-- =========================
+<!-- ========================================
      NAVBAR
-========================= -->
+======================================== -->
 
 <nav class="navbar">
 
@@ -899,6 +929,10 @@ footer p{
             Menu
         </a>
 
+        <a href="#experience">
+            Experience
+        </a>
+
         <a href="#gallery">
             Gallery
         </a>
@@ -908,9 +942,9 @@ footer p{
 </nav>
 
 
-<!-- =========================
+<!-- ========================================
      HERO
-========================= -->
+======================================== -->
 
 <header class="hero">
 
@@ -925,9 +959,11 @@ footer p{
         </p>
 
         <p class="tagline">
+
             A cozy café where delicious coffee,
             adorable cats and unforgettable moments
             come together.
+
         </p>
 
         <a href="#menu" class="btn">
@@ -939,9 +975,9 @@ footer p{
 </header>
 
 
-<!-- =========================
+<!-- ========================================
      ABOUT
-========================= -->
+======================================== -->
 
 <section id="about">
 
@@ -949,13 +985,15 @@ footer p{
         About Us
     </h2>
 
+
     <div class="about">
+
 
         <div class="about-image">
 
             <img
-                src="1812.jpg"
-                alt="Nocturne Café Cat"
+                src="about-cat.jpg"
+                alt="Cat at Nocturne Black Cat Café"
             >
 
         </div>
@@ -966,6 +1004,7 @@ footer p{
             <p>
 
                 Welcome to
+
                 <strong>
                     Nocturne Black Cat Café
                 </strong>,
@@ -976,7 +1015,9 @@ footer p{
 
             </p>
 
+
             <br>
+
 
             <p>
 
@@ -988,7 +1029,9 @@ footer p{
 
             </p>
 
+
             <br>
+
 
             <p>
 
@@ -998,6 +1041,7 @@ footer p{
                 a cute companion.
 
                 Every visit is designed to be
+
                 <strong>
                     cozy, relaxing and memorable.
                 </strong>
@@ -1011,9 +1055,9 @@ footer p{
 </section>
 
 
-<!-- =========================
+<!-- ========================================
      MENU
-========================= -->
+======================================== -->
 
 <section id="menu">
 
@@ -1036,10 +1080,12 @@ footer p{
             </h3>
 
             <p>
+
                 Smooth espresso with
                 creamy milk foam for
                 a rich and comforting
                 coffee experience.
+
             </p>
 
         </div>
@@ -1056,10 +1102,12 @@ footer p{
             </h3>
 
             <p>
+
                 Rich chocolate combined
                 with premium coffee
                 for a deep and luxurious
                 flavor.
+
             </p>
 
         </div>
@@ -1076,9 +1124,11 @@ footer p{
             </h3>
 
             <p>
+
                 Smooth premium matcha
                 with a delicate aroma
                 and refreshing taste.
+
             </p>
 
         </div>
@@ -1095,10 +1145,12 @@ footer p{
             </h3>
 
             <p>
+
                 Creamy cheesecake with
                 rich cocoa flavor,
                 created as our signature
                 dark dessert.
+
             </p>
 
         </div>
@@ -1109,15 +1161,19 @@ footer p{
 </section>
 
 
-<!-- =========================
+<!-- ========================================
      EXPERIENCE
-========================= -->
+======================================== -->
 
-<section class="experience">
+<section
+    class="experience"
+    id="experience"
+>
 
     <h2 class="section-title">
         The Nocturne Experience
     </h2>
+
 
     <p class="experience-text">
 
@@ -1145,8 +1201,10 @@ footer p{
             </h3>
 
             <p>
+
                 Carefully prepared drinks
                 made for coffee lovers.
+
             </p>
 
         </div>
@@ -1163,9 +1221,11 @@ footer p{
             </h3>
 
             <p>
+
                 Spend relaxing moments
                 with our lovely feline
                 companions.
+
             </p>
 
         </div>
@@ -1182,9 +1242,11 @@ footer p{
             </h3>
 
             <p>
+
                 A comfortable environment
                 perfect for relaxing,
                 chatting and taking photos.
+
             </p>
 
         </div>
@@ -1195,9 +1257,9 @@ footer p{
 </section>
 
 
-<!-- =========================
+<!-- ========================================
      GALLERY
-========================= -->
+======================================== -->
 
 <section id="gallery">
 
@@ -1209,13 +1271,14 @@ footer p{
     <div class="gallery">
 
 
-        <!-- รูปที่ 1 -->
+        <!-- Gallery 1 -->
 
-        <div class="gallery-item large">
+        <div class="gallery-item">
 
             <img
-                src="1811.jpg"
+                src="gallery-cat-1.jpg"
                 alt="Cute Cat at Nocturne Café"
+                loading="lazy"
             >
 
             <div class="gallery-caption">
@@ -1229,53 +1292,14 @@ footer p{
         </div>
 
 
-        <!-- รูปที่ 2 -->
+        <!-- Gallery 2 -->
 
         <div class="gallery-item">
 
             <img
-                src="1812.jpg"
-                alt="Relaxing Cat"
-            >
-
-            <div class="gallery-caption">
-
-                <h3>
-                    Relax & Enjoy
-                </h3>
-
-            </div>
-
-        </div>
-
-
-        <!-- รูปที่ 3 -->
-
-        <div class="gallery-item">
-
-            <img
-                src="1810.jpg"
-                alt="Cute Cat"
-            >
-
-            <div class="gallery-caption">
-
-                <h3>
-                    Little Moments
-                </h3>
-
-            </div>
-
-        </div>
-
-
-        <!-- รูปที่ 4 -->
-
-        <div class="gallery-item large">
-
-            <img
-                src="1809.webp"
+                src="gallery-cat-2.webp"
                 alt="Beautiful Cat"
+                loading="lazy"
             >
 
             <div class="gallery-caption">
@@ -1289,20 +1313,63 @@ footer p{
         </div>
 
 
+        <!-- Gallery 3 -->
+
+        <div class="gallery-item">
+
+            <img
+                src="about-cat.jpg"
+                alt="Relaxing Cat"
+                loading="lazy"
+            >
+
+            <div class="gallery-caption">
+
+                <h3>
+                    Relax & Enjoy
+                </h3>
+
+            </div>
+
+        </div>
+
+
+        <!-- Gallery 4 -->
+
+        <div class="gallery-item">
+
+            <img
+                src="hero-cat.jpg"
+                alt="Nocturne Cat"
+                loading="lazy"
+            >
+
+            <div class="gallery-caption">
+
+                <h3>
+                    Little Moments
+                </h3>
+
+            </div>
+
+        </div>
+
+
     </div>
 
 </section>
 
 
-<!-- =========================
+<!-- ========================================
      CTA
-========================= -->
+======================================== -->
 
 <section class="cta">
 
     <h2>
         Come Meet Us
     </h2>
+
 
     <p>
 
@@ -1312,22 +1379,27 @@ footer p{
 
     </p>
 
-    <a href="#about" class="btn">
+
+    <a
+        href="#about"
+        class="btn"
+    >
         Discover Nocturne
     </a>
 
 </section>
 
 
-<!-- =========================
+<!-- ========================================
      FOOTER
-========================= -->
+======================================== -->
 
 <footer>
 
     <h3>
         NOCTURNE BLACK CAT CAFÉ
     </h3>
+
 
     <p>
         Great Coffee • Cute Cats • Cozy Moments
@@ -1377,4 +1449,5 @@ footer p{
 
 
 </body>
+
 </html>
